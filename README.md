@@ -1,14 +1,14 @@
-Quarkus Kafka Quickstart
+Início rápido do Quarkus Kafka
 ========================
 
-This project illustrates how Quarkus applications can interact with Apache Kafka using MicroProfile Reactive Messaging.
+Este projeto ilustra como os aplicativos Quarkus podem interagir com o Apache Kafka usando MicroProfile Reactive Messaging.
 
-## Start the application
+## Inicie o aplicativo
 
-The application is composed of two applications communicating through Kafka.
-Interactions with Kafka is managed by MicroProfile Reactive Messaging.
+O aplicativo é composto por dois aplicativos que se comunicam por meio do Kafka.
+As interações com o Kafka são gerenciadas pelo MicroProfile Reactive Messaging.
 
-They can be started in dev mode using:
+Eles podem ser iniciados no modo dev usando:
 
 ```bash
 mvn -f producer quarkus:dev
