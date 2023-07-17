@@ -14,7 +14,7 @@ Eles podem ser iniciados no modo dev usando:
 mvn -f producer quarkus:dev
 ```
 
-and in another terminal:
+e em outro terminal:
 
 ```bash
 mvn -f processor quarkus:dev
