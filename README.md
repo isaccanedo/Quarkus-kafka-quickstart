@@ -25,9 +25,9 @@ _NOTE_: Quarkus Dev Services starts a Kafka broker for you automatically.
 Then, open your browser at `http://localhost:8080/quotes.html`.
 You can send quote requests and observe received quotes.
 
-## Anatomy
+## Anatomia
 
-The application is composed of the following components:
+O aplicativo é composto pelos seguintes componentes:
 
 #### Producer
 
