@@ -20,10 +20,10 @@ e em outro terminal:
 mvn -f processor quarkus:dev
 ```
 
-_NOTE_: Quarkus Dev Services starts a Kafka broker for you automatically.
+_NOTA_: Quarkus Dev Services inicia um agente Kafka para você automaticamente.
 
-Then, open your browser at `http://localhost:8080/quotes.html`.
-You can send quote requests and observe received quotes.
+Em seguida, abra seu navegador em `http://localhost:8080/quotes.html`.
+Você pode enviar solicitações de cotação e observar as cotações recebidas.
 
 ## Anatomia
 
