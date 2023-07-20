@@ -29,10 +29,10 @@ Você pode enviar solicitações de cotação e observar as cotações recebidas
 
 O aplicativo é composto pelos seguintes componentes:
 
-#### Producer
+#### Produtor
 
-The _producer_ application receive requests from the user (via HTTP) and sends _quote requests_ to the Kafka broker.
-Two main components compose the application:
+O aplicativo _produtor_ recebe solicitações do usuário (via HTTP) e envia _solicitações de cotações_ ao corretor Kafka.
+Dois componentes principais compõem o aplicativo:
 
 * `QuoteProducer` generates uniquely identified quote requests and sends them to the Kafka topic `quote-requests`.
 It also consumes the Kafka topic `quotes` and relays received messages to the browser using Server-Sent Events.
