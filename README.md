@@ -34,9 +34,9 @@ O aplicativo é composto pelos seguintes componentes:
 O aplicativo _produtor_ recebe solicitações do usuário (via HTTP) e envia _solicitações de cotações_ ao corretor Kafka.
 Dois componentes principais compõem o aplicativo:
 
-* `QuoteProducer` generates uniquely identified quote requests and sends them to the Kafka topic `quote-requests`.
-It also consumes the Kafka topic `quotes` and relays received messages to the browser using Server-Sent Events.
-* `quotes.html` sends quote requests to the previous endpoint and updates quotes with received prices.
+* `QuoteProducer` gera solicitações de cotação identificadas de forma exclusiva e as envia para o tópico Kafka `quote-requests`.
+Ele também consome o tópico `quotes` do Kafka e retransmite as mensagens recebidas para o navegador usando eventos enviados pelo servidor.
+* `quotes.html` envia pedidos de cotação para o terminal anterior e atualiza as cotações com os preços recebidos.
 
 #### Processor
 
