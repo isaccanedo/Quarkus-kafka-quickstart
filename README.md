@@ -54,40 +54,40 @@ Para executar o aplicativo no Docker, primeiro verifique se os dois serviços fo
 mvn package
 ```
 
-Then launch Docker Compose:
+Em seguida, inicie o Docker Compose:
 
 ```bash
 docker-compose up
 ```
 
-This will create a single-node Kafka cluster and launch both applications.
+Isso criará um cluster Kafka de nó único e iniciará os dois aplicativos.
 
-## Running in native
+## Executando em nativo
 
-You can compile the application into a native binary using:
+Você pode compilar o aplicativo em um binário nativo usando:
 
 ```bash
 mvn package -Dnative
 ```
 
-As you are running in _prod_ mode, you need a Kafka cluster.
+Como você está executando no modo _prod_, precisa de um cluster Kafka.
 
-If you have Docker installed, you can simply run:
+Se você tiver o Docker instalado, basta executar:
 
 ```bash
 export QUARKUS_MODE=native
 docker-compose up --build
 ```
 
-Alternatively, you can follow the instructions from the [Apache Kafka web site](https://kafka.apache.org/quickstart).
+Como alternativa, você pode seguir as instruções do [site do Apache Kafka](https://kafka.apache.org/quickstart).
 
-Then run both applications respectively with:
+Em seguida, execute os dois aplicativos, respectivamente, com:
 
 ```bash
 ./producer/target/kafka-quickstart-producer-1.0.0-SNAPSHOT-runner
 ```
 
-and in another terminal:
+e em outro terminal:
 
 ```bash
 ./processor/target/kafka-quickstart-processor-1.0.0-SNAPSHOT-runner
