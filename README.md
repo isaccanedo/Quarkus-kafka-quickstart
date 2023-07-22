@@ -38,19 +38,18 @@ Dois componentes principais compõem o aplicativo:
 Ele também consome o tópico `quotes` do Kafka e retransmite as mensagens recebidas para o navegador usando eventos enviados pelo servidor.
 * `quotes.html` envia pedidos de cotação para o terminal anterior e atualiza as cotações com os preços recebidos.
 
-#### Processor
+#### Processador
 
-The _processor_ application receives quote requests from Kafka, processes them, and writes results into the `quotes` Kafka topic.
-The application has one main class:
+O aplicativo _processor_ recebe solicitações de cotação do Kafka, processa-as e grava os resultados no tópico `quotes` do Kafka.
+O aplicativo tem uma classe principal:
 
-* `QuoteProcessor` consumes quote request ids from the `quote-requests` Kafka topic and responds back to the `quotes` topic with a `Quote` object containing a random price.
+* `QuoteProcessor` consome ids de solicitação de cotação do tópico Kafka `quote-requests` e responde de volta ao tópico `quotes` com um objeto `Quote` contendo um preço aleatório.
 
-The connection to Kafka is configured in the `src/main/resources/application.properties` file.
+A conexão com o Kafka é configurada no arquivo `src/main/resources/application.properties`.
 
-## Running the application in Docker
+## Executando o aplicativo no Docker
 
-To run the application in Docker, first make sure that both services are built:
-
+Para executar o aplicativo no Docker, primeiro verifique se os dois serviços foram criados:
 ```bash
 mvn package
 ```
