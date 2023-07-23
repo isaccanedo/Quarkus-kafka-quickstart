@@ -1,7 +1,7 @@
 Início rápido do Quarkus Kafka
 ========================
 
-Este projeto ilustra como os aplicativos Quarkus podem interagir com o Apache Kafka usando MicroProfile Reactive Messaging.
+Este projeto ilustra como os aplicativos Quarkus podem interagir com o Apache Kafka usando MicroProfile Reactive Messaging
 
 ## Inicie o aplicativo
 
