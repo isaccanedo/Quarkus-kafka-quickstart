@@ -6,7 +6,7 @@ Este projeto ilustra como os aplicativos Quarkus podem interagir com o Apache Ka
 ## Inicie o aplicativo
 
 O aplicativo é composto por dois aplicativos que se comunicam por meio do Kafka.
-As interações com o Kafka são gerenciadas pelo MicroProfile Reactive Messaging.
+As interações feitas com o Kafka são gerenciadas pelo MicroProfile Reactive Messaging.
 
 Eles podem ser iniciados no modo dev usando:
 
